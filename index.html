@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Formulário</title>
+</head>
+    <body>
+        <h1 id="Título">Registre suas informações:</h1>
+        <br>
+        <p><h3 id="Sub">Faça o cadastro:</h3></p>
+        <br> <br>
+     <form>
+<fieldset class="grupo">
+    <div class="campo">
+        <label for="nome"><strong>Nome completo:</strong> </label required>
+        <input type="text" name="Nome" id="nome" required>
+    </div>
+    <div class="campo">
+        <label for="Idade"> Idade:</strong></label required>
+        <input type="text" name="Idade" id="Idade" required>
+    </div>
+    <div class="campo">
+        <label for="email">Email: </label required>
+        <input type="email" name="email" id="email" required>
+    </div>
+</fieldset>
+<br> <br> <br>
+<fieldset class="grupo">
+    <div class="campo">
+        <label>Você prefere o Darth Vader ou o Yoda ? </label>
+       <br>
+        <label>
+            <input type="radio" name="devweb" value="frontend">Darth Vader
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="devweb" value="backend">Yoda
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="devweb" value="fullstack"> Gosto de ambos
+        </label>
+    </div>
+</fieldset>
+<br> <br> <br>
+<fieldset class="grupo">
+    <div class="campo">
+        <label for="Qual é a melhor série ?">Qual é a melhor série ?</label>
+<select id="Qual é a melhor série?">
+    <option selected disabled value="">Escolha aqui</option>
+<option>Sherlock Holmes</option>
+<option>Stranger Things</option>
+<option>The Big Bang Theory</option>
+<option>Um Maluco no Pedaço</option>
+<option>The Flash</option>
+</select>
+    </div>
+</fieldset>
+<br> <br> <br>
+<fieldset class="grupo">
+    <div class="campo">
+        <!--Não precisa ser necessariamente na Vertical-->
+        <label>Selecione os jogos que gosta:</label>
+        <br>
+        <input type="checkbox" id="1" name="jogos" value="1">
+<label for="1" value="1"> Minecraft
+    <br>
+    <input type="checkbox" id="2" value="2">
+<label for="2" value="2"> Warcraft 2</label>
+<br>
+    <input type="checkbox" id="3" value="3">
+<label for="3" value="3">Pes 2016</label>
+<BR>
+    <input type="checkbox" id="4" value="4">
+<label for="4" value="4">Mario World</label>
+<br>
+    <input type="checkbox" id="5" value="5">
+<label id="5" value="5">Lego Vingadores</label>
+    </div>
+</fieldset class="grupo">
+<br> <br> <br>
+<fieldset class="grupo">
+    <div class="campo">
+        <label>Rescreva a Bíblia:</label>
+<textarea row="10" style="width: 26em" id="Bíblia" name="Bíblia"> Escreva aqui</textarea required>
+    </div>
+</fieldset>
+<br> <br> <br>
+<button class="save" type="save">Salvar</button>
+<br> <br> <br>
+        <button class="submit" type="submit">Enviar</button>
+        <br> <br> <br>
+     </form>
+    </body>
+</html>
